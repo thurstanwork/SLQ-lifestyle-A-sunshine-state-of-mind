@@ -16,19 +16,64 @@ html,
 body {
     font-size: 1em;
     font-family: 'Open+Sans', sans-serif;
+    font-weight: 400;
+    color: black;
     margin: 0;
     padding: 0;
 }
 
+.sectionContainer {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.sectionContent {
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+section:nth-of-type(2n) {
+    background: hsla(0, 0%, 60%, .2);
+}
 
 img {
     width: 100%;
 }
+
+/* Circular */
+
+.ambassadorPortrait img {
+    border-radius: 50%;
+    max-width: 450px;
+}
+
+/* White border */
+
+.asset {
+    background: white;
+    border-width: 20px;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+/* Soften item corners */
+
+.asset img {
+    border-radius: 2px;
+}
+
+/* harsh shadown */
+
+.asset {
+    box-shadow: -2px 4px 1px 3px hsla(0, 0%, 0%, .4);
+}
+
 
 
 /* TEMP STYLING */
 
 html,
 body {
-    background: hsla(0, 100%, 50%, .2);
+    background: hsla(0, 0%, 80%, .2);
 }
