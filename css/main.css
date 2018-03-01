@@ -52,12 +52,12 @@ img {
     margin: 20px;
 }
 
-.headings {
-    fill: #1e1854;
+.titleBlock {
+    fill: #000;
 }
 
-.headings:hover {
-    fill: grey;
+.headings {
+    fill: #1e1854;
 }
 
 .eventDetails {
