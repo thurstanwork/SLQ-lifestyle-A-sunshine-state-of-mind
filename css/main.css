@@ -2,7 +2,7 @@
 
 @import url("video.css");
 @import url("footer.css");
-
+@import url("menu.css");
 /*
 @import url("mobile.css");
 @import url("tablet.css");
@@ -20,6 +20,11 @@ body {
     color: black;
     margin: 0;
     padding: 0;
+}
+
+h1,
+h2 {
+    font-size: 0;
 }
 
 .sectionContainer {
@@ -41,6 +46,20 @@ img {
     width: 100%;
 }
 
+.SLQmark {
+    fill: #000;
+    width: 100px;
+    margin: 20px;
+}
+
+.headings {
+    fill: #1e1854;
+}
+
+.headings:hover {
+    fill: grey;
+}
+
 .eventDetails {
     font-weight: 700;
 }
@@ -54,6 +73,11 @@ img {
 .ambassadorPortrait img {
     border-radius: 50%;
     max-width: 450px;
+}
+
+.question {
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 /* White border */
