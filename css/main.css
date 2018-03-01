@@ -41,6 +41,14 @@ img {
     width: 100%;
 }
 
+.eventDetails {
+    font-weight: 700;
+}
+
+.eventDetails sup {
+    font-size: .7rem;
+}
+
 /* Circular */
 
 .ambassadorPortrait img {
@@ -65,11 +73,31 @@ img {
 
 /* harsh shadown */
 
-.asset {
+.asset,
+.ambassadorPortrait img {
     box-shadow: -2px 4px 1px 3px hsla(0, 0%, 0%, .4);
 }
 
 
+
+figcaption {
+    margin-top: 5px;
+}
+
+.assetDescription {
+    font-size: .95rem;
+    font-style: italic;
+}
+
+.assetAttribute {
+    display: block;
+    font-size: .9rem;
+}
+
+.assetReference {
+    font-size: .6rem;
+    text-align: right;
+}
 
 /* TEMP STYLING */
 
