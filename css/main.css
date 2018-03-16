@@ -1,4 +1,4 @@
-﻿/* CSS Document */
+/* CSS Document */
 
 @import url("video.css");
 @import url("footer.css");
@@ -12,120 +12,125 @@
 
 /*** GLOBAL ***/
 
-html,
-body {
-    font-size: 1em;
-    font-family: 'Open+Sans', sans-serif;
-    font-weight: 400;
-    color: black;
-    margin: 0;
-    padding: 0;
+html, body {
+  font-size: 1.1em;
+  font-family: 'Open+Sans', sans-serif;
+  font-weight: 400;
+  color: black;
+  margin: 0;
+  padding: 0;
 }
 
-h1,
-h2 {
-    font-size: 0;
+h1, h2 {
+  font-size: 0;
+}
+
+cite {
+  font-style: italic;
 }
 
 .sectionContainer {
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
 }
 
 .sectionContent {
-    margin: 0 auto;
-    max-width: 600px;
-    min-width: 300px;
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 300px;
 }
 
 section:nth-of-type(2n) {
-    background: hsla(0, 0%, 60%, .2);
+  background: hsla(0, 0%, 60%, .2);
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .SLQmark {
-    fill: #000;
-    width: 100px;
-    margin: 20px;
+  fill: #000;
+  width: 5rem;
+  margin: .5rem;
 }
 
 .titleBlock {
-    fill: #000;
+  fill: #000;
 }
 
 .headings {
-    fill: #1e1854;
+  fill: #1e1854;
 }
 
 .eventDetails {
-    font-weight: 700;
-}
-
-.eventDetails sup {
-    font-size: .7rem;
-}
-
-/* Circular */
-
-.ambassadorPortrait img {
-    border-radius: 50%;
-    max-width: 450px;
+  font-weight: 700;
 }
 
 .question {
-    font-size: 1.2rem;
-    font-style: italic;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 /* White border */
 
 .asset {
-    background: white;
-    border-width: 20px;
-    padding: 20px;
-    border-radius: 3px;
+  background: white;
+  border-width: 20px;
+  padding: 20px;
+  border-radius: 3px;
 }
 
 /* Soften item corners */
 
 .asset img {
-    border-radius: 2px;
+  border-radius: 2px;
 }
 
 /* harsh shadown */
 
-.asset,
-.ambassadorPortrait img {
-    box-shadow: -2px 4px 1px 3px hsla(0, 0%, 0%, .4);
-}
-
-
-
 figcaption {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .assetDescription {
-    font-size: .95rem;
-    font-style: italic;
+  font-size: .95rem;
+  font-style: italic;
 }
 
 .assetAttribute {
-    display: block;
-    font-size: .9rem;
+  display: block;
+  font-size: .9rem;
 }
 
 .assetReference {
-    font-size: .6rem;
-    text-align: right;
+  font-size: .6rem;
+  text-align: right;
 }
 
 /* TEMP STYLING */
 
-html,
-body {
-    background: hsla(0, 0%, 80%, .2);
+html, body {
+  background: hsla(0, 0%, 80%, .2);
+}
+
+/*** AMBASSADORS SECTION ***/
+
+#ambassadors h2 {
+  font-size: 2.1rem;
+}
+
+/* PORTRAITS */
+
+.ambassadorPortrait img {
+  border-radius: 50%;
+  max-width: 10rem;
+}
+
+.asset, .ambassadorPortrait img {
+  box-shadow: -2px 4px 1px 3px hsla(0, 0%, 0%, .4);
+}
+
+.ambassadorName {
+  font-size: 1.8rem;
+  font-weight: 300;
 }
