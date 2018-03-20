@@ -1,2 +1,25 @@
-﻿/* CSS Document */
+/*** RESPONSIVE LAYOUT ***/
 
+/*** MOBILE ***/
+
+.hopeFooterMotif2 {
+  display: none;
+}
+
+.communityFooterMotif2 {
+  display: none;
+}
+
+.ambassador {
+  flex-wrap: wrap;
+}
+
+/*** TABLET ***/
+
+@media screen and (min-width: 600px) {
+  .ambassador {
+    flex-wrap: nowrap;
+  }
+}
+
+/*** DESKTOP ***/

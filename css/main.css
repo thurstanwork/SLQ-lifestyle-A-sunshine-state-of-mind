@@ -3,12 +3,13 @@
 @import url("video.css");
 @import url("footer.css");
 @import url("menu.css");
+@import url("responsive.css");
 /*
 @import url("mobile.css");
 @import url("tablet.css");
 @import url("desktop.css");
 /*
-@import url("colours.css"); */
+
 
 /*** GLOBAL ***/
 
@@ -17,6 +18,7 @@ html, body {
   font-family: 'Open+Sans', sans-serif;
   font-weight: 400;
   color: black;
+  background: white;
   margin: 0;
   padding: 0;
 }
@@ -29,6 +31,10 @@ cite {
   font-style: italic;
 }
 
+a {
+  text-decoration: none;
+}
+
 .sectionContainer {
   padding-top: 3rem;
   padding-bottom: 2.5rem;
@@ -36,73 +42,54 @@ cite {
 
 .sectionContent {
   margin: 0 auto;
-  max-width: 600px;
+  padding: 0 1rem;
+  max-width: 750px;
   min-width: 300px;
-}
-
-section:nth-of-type(2n) {
-  background: hsla(0, 0%, 60%, .2);
-}
-
-img {
-  width: 100%;
-}
-
-.SLQmark {
-  fill: #000;
-  width: 5rem;
-  margin: .5rem;
-}
-
-.titleBlock {
-  fill: #000;
 }
 
 .headings {
   fill: #1e1854;
 }
 
-.eventDetails {
-  font-weight: 700;
+img {
+  width: 100%;
 }
 
-.question {
-  font-size: 1.2rem;
-  font-style: italic;
+.headerMotif {
+  width: 60%;
 }
 
-/* White border */
-
-.asset {
+.photo {
   background: white;
   border-width: 20px;
   padding: 20px;
   border-radius: 3px;
 }
 
-/* Soften item corners */
+/* Photograph Stying */
 
-.asset img {
+.photo img {
   border-radius: 2px;
 }
 
-/* harsh shadown */
-
 figcaption {
+  color: black;
   margin-top: 5px;
 }
 
-.assetDescription {
+.photoDescription {
   font-size: .95rem;
   font-style: italic;
 }
 
-.assetAttribute {
+.photoAttribute {
   display: block;
   font-size: .9rem;
+  margin-top: .2rem;
 }
 
-.assetReference {
+.photoReference {
+  display: none;
   font-size: .6rem;
   text-align: right;
 }
@@ -110,27 +97,178 @@ figcaption {
 /* TEMP STYLING */
 
 html, body {
-  background: hsla(0, 0%, 80%, .2);
+  background: white;
+  /*  background: hsla(0, 0%, 80%, .2); */
 }
 
+/***********************/
+
+/***  Intro Section  ***/
+
+/***********************/
+
+#intro {
+  padding-top: 0;
+  background-color: #1E1854;
+  background-image: url(/img/introBackground.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.SLQmark {
+  fill: #FFF;
+  width: 5rem;
+  height: 5rem;
+  margin: .5rem;
+}
+
+.titleBlock {
+  fill: #FFF;
+  width: 100%;
+  margin-top: -5rem;
+  height: 20rem;
+}
+
+.eventDetails {
+  font-weight: 700;
+}
+
+.heroImageMotif {
+  width: 150px;
+  margin-top: -50px;
+}
+
+.question {
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-style: italic;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/***************************/
+
 /*** AMBASSADORS SECTION ***/
+
+/***************************/
+
+#ambassadors {
+  background: #eee;
+  color: #333;
+}
 
 #ambassadors h2 {
   font-size: 2.1rem;
 }
 
+#ambassadors a {
+  color: #333;
+}
+
+.ambassador {
+  display: flex;
+  margin-top: 1.5rem;
+  background: white;
+  border-radius: .2rem;
+}
+
 /* PORTRAITS */
+
+.ambassadorPortrait {
+  margin: 1.5rem;
+}
 
 .ambassadorPortrait img {
   border-radius: 50%;
-  max-width: 10rem;
+  min-width: 10rem;
+  max-width: 20rem;
 }
 
-.asset, .ambassadorPortrait img {
+.photo, .ambassadorPortrait img {
   box-shadow: -2px 4px 1px 3px hsla(0, 0%, 0%, .4);
+}
+
+.ambassadorDetails {
+  padding: 1.5rem;
 }
 
 .ambassadorName {
   font-size: 1.8rem;
   font-weight: 300;
+  margin-top: .75rem;
+  margin-bottom: .25rem;
+}
+
+/***************************/
+
+/***  WELLBEING SECTION  ***/
+
+/***************************/
+
+/********************/
+
+/*** HOME SECTION ***/
+
+/********************/
+
+/**************************/
+
+/*** EXPRESSION SECTION ***/
+
+/**************************/
+
+#expression {
+  background-color: #1E1854;
+  color: white;
+}
+
+#expression .headings {
+  fill: #fff;
+}
+
+.expressionPhoto {
+  transform: rotateZ(2deg);
+}
+
+/********************/
+
+/*** PLAY SECTION ***/
+
+/********************/
+
+.playPhoto {
+  transform: rotateZ(-1.5deg);
+}
+
+/*************************/
+
+/*** COMMUNITY SECTION ***/
+
+/*************************/
+
+#community {
+  background-color: #1E1854;
+  color: white;
+}
+
+#community .headings {
+  fill: #FFF;
+}
+
+.communityFooterMotif1 {
+  margin-top: 3rem;
+}
+
+/********************/
+
+/*** HOPE SECTION ***/
+
+/********************/
+
+#hope {
+  padding-bottom: 0;
+}
+
+.hopeFooterMotif1 {
+  margin-top: 3rem;
 }
