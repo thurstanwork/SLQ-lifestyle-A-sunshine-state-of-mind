@@ -1,21 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="glifSymbols" class="dividersSymbols">
-<style type="text/css">
-	.sectionDivider {
-        fill:#000000;
-    }
-</style>
-
-	<symbol id="sectionCurveStartOverlap" class="sectionDivider sectionStartOverlap" viewBox="0 0 200 10">
-		<path id="CurveStartOverlap" d="M200,10V9c0,0-50-9-100-9S0,9,0,9v1H200z"/>
-	</symbol>
-	<symbol id="sectionCurveStart" class="sectionDivider sectionStart" viewBox="0 0 200 10">
-		<path id="CurveStart" d="M200,10c0,0-50-10-100-10S0,10,0,10H200z"/>
-	</symbol>
-	<symbol id="sectionCurveEndOverlap" class="sectionDivider sectionEndOverlap" viewBox="0 0 200 10">
-		<path id="CurveEndOverlap" d="M0,0v1c0,0,50,9,100,9s100-9,100-9V0H0z"/>
-	</symbol>
-	<symbol id="sectionCurveEnd" class="sectionDivider sectionEnd" viewBox="0 0 200 10">
-		<path id="CurveEnd" d="M0,0c0,0,50,10,100,10S200,0,200,0H0z"/>
-	</symbol>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1e1854;
+      }
+    </style>
+  </defs>
+  <title>glifs</title>
+  <path id="sectionBackgroundEnd" class="cls-1" d="M0,0V1a558.4,558.4,0,0,0,100,9A558.4,558.4,0,0,0,200,1V0Z"/>
+  <path id="sectionBackgroundStart" class="cls-1" d="M100,0A558.4,558.4,0,0,0,0,9v1H200V9"/>
+  <path id="sectionBackgroundStartNoOverlap" class="cls-1" d="M200,10V9.6A515,515,0,0,0,100,0,515,515,0,0,0,0,9.6V10Z"/>
+  <path id="sectionBackgroundStartNoOverlap-2" data-name="sectionBackgroundStartNoOverlap" class="cls-1" d="M0,0V.4A515,515,0,0,0,100,10,515,515,0,0,0,200,.4V0Z"/>
 </svg>

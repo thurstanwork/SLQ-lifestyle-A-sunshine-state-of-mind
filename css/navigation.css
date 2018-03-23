@@ -1,0 +1,78 @@
+/*--------------------------------------------------------------
+Navigation:
+--------------------------------------------------------------*/
+
+.main-nav {
+  padding: 0;
+  font-size: 1.1em;
+  color: white;
+  background-color: hsla(0, 0%, 100%, 50%);
+}
+
+.trigger {
+  display: none;
+  padding: .1em .5em;
+  color: white;
+  background: hsl(0, 0%, 10%);
+  border: none;
+  transform: rotate(90deg);
+}
+
+.trigger:focus, .trigger:hover {
+  outline: 2px dotted hsl(0, 0%, 10%);
+}
+
+.trigger:focus {
+  outline-color: white;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav a {
+  display: block;
+  padding: .1em .5em;
+  margin: 0.5em .25em;
+  color: black;
+  text-decoration: none;
+  border-bottom: solid 4px hsla(0, 0%, 0%, 0);
+}
+
+.main-nav a:focus, .main-nav a:hover {
+  border-bottom: solid 4px #B9672D;
+}
+
+/*
+  @media screen and (min-width: 27em) {
+    .reveal {
+      left: 0;
+    }
+
+    .main-nav {
+      grid-area: nav;
+    }
+
+    .main-nav ul {
+      display: none;
+      flex-direction: column;
+    }
+    .open ul {
+      display: flex;
+    }
+    .trigger {
+      position: fixed;
+      display: block;
+      top: 1.5em;
+      left: .2em;
+      transition: left .6s;
+    }
+    .reveal .trigger {
+      left: 14em;
+    }
+*/

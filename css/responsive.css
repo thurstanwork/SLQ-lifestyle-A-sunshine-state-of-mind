@@ -1,10 +1,22 @@
 /*** RESPONSIVE LAYOUT ***/
 
-/*** MOBILE ***/
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
 
+.site {
+  /*  max-width: 50em;
+  margin: 0 auto;*/
+}
+
+/*** MOBILE ***
+
+@media screen and (max-width: 40em);
 .hopeFooterMotif2 {
   display: none;
 }
+
+.photo {}
 
 .communityFooterMotif2 {
   display: none;
@@ -14,7 +26,7 @@
   flex-wrap: wrap;
 }
 
-/*** TABLET ***/
+/*** TABLET ***
 
 @media screen and (min-width: 600px) {
   .ambassador {
@@ -23,3 +35,72 @@
 }
 
 /*** DESKTOP ***/
+
+@supports (grid-area:auto) {
+  @media screen {
+    /*    .site {
+      max-width: none;
+      display: grid;
+      grid-template-columns: 15em auto;
+    } */
+    .titleBar {
+      display: none;
+    }
+    #intro {
+      display: none;
+    }
+    #ambassadorS {
+      display: none;
+    }
+    .ambassadorHeading {
+      grid-area: heading;
+      grid-column: 1/4;
+    }
+    .bodyText {
+      grid-area: bodyText;
+      background-color: hsla(60, 100%, 50%, .5);
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    .videoContainer {
+      grid-area: video;
+    }
+    .ambassadorsContent {
+      display: grid;
+      grid-template-columns: 25em auto 20em;
+      grid-template-rows: 5em auto 3em 20em;
+      grid-column-gap: 2em;
+      grid-row-gap: 1em;
+      grid-template-areas: "heading heading heading" "bodyText videoArea videoArea";
+    }
+    #wellbeing .sectionContent {
+      display: grid;
+      grid-template-columns: 25em 40em;
+      grid-template-rows: 5em;
+      grid-column-gap: 2em;
+      grid-template-areas: "heading headerMotif" "question question" "bodyText video";
+    }
+    .headerMotif {
+      grid-area: headerMotif;
+      background-color: hsla(0, 100%, 50%, .5);
+      grid-row: 1/2;
+    }
+    .headingContainer {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .wellbeingHeading {
+      grid-area: heading;
+      grid-column: 1/3;
+    }
+    .question {
+      grid-area: question;
+      background-color: hsla(120, 100%, 50%, .5);
+    }
+    #home .sectionContent {
+      display: grid;
+      grid-template-columns: 30em 20em;
+      grid-column-gap: 2em;
+      grid-template-areas: "heading heading" "heading question" "video bodyText";
+    }
+  }

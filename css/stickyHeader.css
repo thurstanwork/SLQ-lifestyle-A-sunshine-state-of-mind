@@ -1,0 +1,15 @@
+.titleBar {
+  display: block;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  background: hsla(0, 0%, 100%, .8);
+}
+
+.titleBar .SLQmark {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  fill: #222;
+}

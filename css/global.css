@@ -1,0 +1,28 @@
+/*** GLOBAL ***/
+
+html, body {
+  font-size: 1.1em;
+  font-family: 'Open+Sans', sans-serif;
+  font-weight: 400;
+  color: black;
+  background: white;
+  color: hsl(0, 0%, 20%);
+  background: hsl(0, 0%, 95%);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-size: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
