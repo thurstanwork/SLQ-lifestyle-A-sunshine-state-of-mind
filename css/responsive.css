@@ -43,6 +43,17 @@ Basic responsive layout for all browsers:
       display: grid;
       grid-template-columns: 15em auto;
     } */
+    /* Allow items to shrink or be clipped by grid */
+    .sectionContent {
+      display: grid;
+      min-height: 0;
+      min-width: 0;
+    }
+    .grid-item {
+      overflow: hidden;
+      min-width: 0;
+    }
+    /* End grid clip/shrink */
     .titleBar {
       display: none;
     }
@@ -54,24 +65,20 @@ Basic responsive layout for all browsers:
     }
     .ambassadorHeading {
       grid-area: heading;
-      grid-column: 1/4;
     }
     .bodyText {
       grid-area: bodyText;
-      background-color: hsla(60, 100%, 50%, .5);
-      grid-column-start: 1;
-      grid-column-end: 2;
     }
     .videoContainer {
       grid-area: video;
     }
-    .ambassadorsContent {
+    #ambassadorS .sectionContent {
       display: grid;
       grid-template-columns: 25em auto 20em;
-      grid-template-rows: 5em auto 3em 20em;
+      grid-template-rows: 5em auto 20em;
       grid-column-gap: 2em;
-      grid-row-gap: 1em;
-      grid-template-areas: "heading heading heading" "bodyText videoArea videoArea";
+      grid-row-gap: 2em;
+      grid-template-areas: "heading heading heading" "bodyText videoArea videoArea" "ambassadorPortraits AmbassadorPortraits ambassadorDetails";
     }
     #wellbeing .sectionContent {
       display: grid;
@@ -95,12 +102,29 @@ Basic responsive layout for all browsers:
     }
     .question {
       grid-area: question;
-      background-color: hsla(120, 100%, 50%, .5);
     }
     #home .sectionContent {
-      display: grid;
       grid-template-columns: 30em 20em;
       grid-column-gap: 2em;
       grid-template-areas: "heading heading" "heading question" "video bodyText";
     }
+  }
+  /* False Colour for layout */
+  .heading {
+    background-color: hsla(180, 100%, 50%, .5);
+  }
+  .bodyText {
+    background-color: hsla(60, 100%, 50%, .5);
+  }
+  .question {
+    background-color: hsla(120, 100%, 50%, .5);
+  }
+  .videoContainer {
+    background-color: hsla(300, 100%, 50%, .5);
+  }
+  .headerMotif {
+    background-color: hsla(0, 100%, 50%, .5);
+  }
+  .footerMotif {
+    background-color: hsla(240, 100%, 50%, .5);
   }
