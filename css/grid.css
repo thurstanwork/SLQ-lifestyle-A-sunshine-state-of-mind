@@ -1,0 +1,86 @@
+/*** DESKTOP ***/
+
+@supports (grid-area:auto) {
+  @media screen {
+    /*    .site {
+      max-width: none;
+      display: grid;
+    } */
+    /* Allow items to shrink or be clipped by grid */
+    .sectionContent {
+      display: grid;
+      min-height: 0;
+      min-width: 0;
+    }
+    .grid-item {
+      overflow: hidden;
+      min-width: 0;
+    }
+    /* End grid clip/shrink */
+    .titleBar {
+      display: none;
+    }
+    #intro {}
+    /* Grid Layout area definitions */
+    .heading {
+      grid-area: heading;
+    }
+    .headerMotif {
+      grid-area: headerMotif;
+    }
+    .question {
+      grid-area: question;
+    }
+    .bodyText {
+      grid-area: bodyText;
+    }
+    .videoContainer {
+      grid-area: video;
+    }
+    .footerMotif {
+      grid-area: footerMotif;
+    }
+    .footerMotif2 {
+      grid-area: footerMotif2;
+    }
+    /* Grid Templates */
+    #ambassadorS .sectionContent {
+      display: grid;
+      grid-template-columns: 25em auto 20em;
+      grid-template-rows: 5em auto 20em;
+      grid-column-gap: 2em;
+      grid-row-gap: 2em;
+      grid-template-areas: "heading heading heading" "bodyText videoArea videoArea" "ambassadorPortraits AmbassadorPortraits ambassadorDetails";
+    }
+    #wellbeing .sectionContent {
+      display: grid;
+      grid-template-columns: 25em 40em;
+      grid-template-rows: 5em;
+      grid-column-gap: 2em;
+      grid-template-areas: "heading headerMotif" "question question" "bodyText video";
+    }
+    #home .sectionContent {
+      grid-template-columns: 30em 20em;
+      grid-column-gap: 2em;
+      grid-template-areas: "heading heading" "heading question" "video bodyText";
+    }
+  }
+  /* False Colour for layout */
+  .heading {
+    background-color: hsla(180, 100%, 50%, .5);
+  }
+  .bodyText {
+    background-color: hsla(60, 100%, 50%, .5);
+  }
+  .question {
+    background-color: hsla(120, 100%, 50%, .5);
+  }
+  .videoContainer {
+    background-color: hsla(300, 100%, 50%, .5);
+  }
+  .headerMotif {
+    background-color: hsla(0, 100%, 50%, .5);
+  }
+  .footerMotif {
+    background-color: hsla(240, 100%, 50%, .5);
+  }

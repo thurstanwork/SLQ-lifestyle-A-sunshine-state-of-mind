@@ -1,0 +1,14 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1e1854;
+      }
+    </style>
+  </defs>
+  <title>glifs</title>
+  <path id="sectionBackgroundEnd" class="cls-1" d="M0,0V1a558.4,558.4,0,0,0,100,9A558.4,558.4,0,0,0,200,1V0Z"/>
+  <path id="sectionBackgroundStart" class="cls-1" d="M100,0A558.4,558.4,0,0,0,0,9v1H200V9"/>
+  <path id="sectionBackgroundStartNoOverlap" class="cls-1" d="M200,10V9.6A515,515,0,0,0,100,0,515,515,0,0,0,0,9.6V10Z"/>
+  <path id="sectionBackgroundStartNoOverlap-2" data-name="sectionBackgroundStartNoOverlap" class="cls-1" d="M0,0V.4A515,515,0,0,0,100,10,515,515,0,0,0,200,.4V0Z"/>
+</svg>

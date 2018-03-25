@@ -5,126 +5,30 @@ Basic responsive layout for all browsers:
 --------------------------------------------------------------*/
 
 .site {
-  /*  max-width: 50em;
-  margin: 0 auto;*/
+  max-width: 50em;
+  margin: 0 auto;
 }
 
-/*** MOBILE ***
+/*** MOBILE ***/
 
 @media screen and (max-width: 40em);
-.hopeFooterMotif2 {
-  display: none;
+  {
+  .hopeFooterMotif2 {
+    display: none;
+  }
+  .photo {}
+  .communityFooterMotif2 {
+    display: none;
+  }
+  .ambassador {
+    flex-wrap: wrap;
+  }
 }
 
-.photo {}
-
-.communityFooterMotif2 {
-  display: none;
-}
-
-.ambassador {
-  flex-wrap: wrap;
-}
-
-/*** TABLET ***
+/*** TABLET ***/
 
 @media screen and (min-width: 600px) {
   .ambassador {
     flex-wrap: nowrap;
   }
 }
-
-/*** DESKTOP ***/
-
-@supports (grid-area:auto) {
-  @media screen {
-    /*    .site {
-      max-width: none;
-      display: grid;
-      grid-template-columns: 15em auto;
-    } */
-    /* Allow items to shrink or be clipped by grid */
-    .sectionContent {
-      display: grid;
-      min-height: 0;
-      min-width: 0;
-    }
-    .grid-item {
-      overflow: hidden;
-      min-width: 0;
-    }
-    /* End grid clip/shrink */
-    .titleBar {
-      display: none;
-    }
-    #intro {
-      display: none;
-    }
-    #ambassadorS {
-      display: none;
-    }
-    .ambassadorHeading {
-      grid-area: heading;
-    }
-    .bodyText {
-      grid-area: bodyText;
-    }
-    .videoContainer {
-      grid-area: video;
-    }
-    #ambassadorS .sectionContent {
-      display: grid;
-      grid-template-columns: 25em auto 20em;
-      grid-template-rows: 5em auto 20em;
-      grid-column-gap: 2em;
-      grid-row-gap: 2em;
-      grid-template-areas: "heading heading heading" "bodyText videoArea videoArea" "ambassadorPortraits AmbassadorPortraits ambassadorDetails";
-    }
-    #wellbeing .sectionContent {
-      display: grid;
-      grid-template-columns: 25em 40em;
-      grid-template-rows: 5em;
-      grid-column-gap: 2em;
-      grid-template-areas: "heading headerMotif" "question question" "bodyText video";
-    }
-    .headerMotif {
-      grid-area: headerMotif;
-      background-color: hsla(0, 100%, 50%, .5);
-      grid-row: 1/2;
-    }
-    .headingContainer {
-      grid-column-start: 2;
-      grid-column-end: 3;
-    }
-    .wellbeingHeading {
-      grid-area: heading;
-      grid-column: 1/3;
-    }
-    .question {
-      grid-area: question;
-    }
-    #home .sectionContent {
-      grid-template-columns: 30em 20em;
-      grid-column-gap: 2em;
-      grid-template-areas: "heading heading" "heading question" "video bodyText";
-    }
-  }
-  /* False Colour for layout */
-  .heading {
-    background-color: hsla(180, 100%, 50%, .5);
-  }
-  .bodyText {
-    background-color: hsla(60, 100%, 50%, .5);
-  }
-  .question {
-    background-color: hsla(120, 100%, 50%, .5);
-  }
-  .videoContainer {
-    background-color: hsla(300, 100%, 50%, .5);
-  }
-  .headerMotif {
-    background-color: hsla(0, 100%, 50%, .5);
-  }
-  .footerMotif {
-    background-color: hsla(240, 100%, 50%, .5);
-  }
