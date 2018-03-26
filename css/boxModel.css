@@ -1,0 +1,10 @@
+.headerMotif {
+    width: 40%;
+}
+
+.footerMotif,
+.footerMotif1,
+.footerMotif2 {
+    margin: 0 auto;
+    width: 80%;
+}

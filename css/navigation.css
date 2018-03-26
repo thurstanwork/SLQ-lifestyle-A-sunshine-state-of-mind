@@ -10,14 +10,13 @@ Navigation:
 .trigger {
   display: none;
   padding: .1em .5em;
-  color: white;
-  background: hsl(0, 0%, 10%);
+  color: black;
+  background: hsl(0, 0%, 90%);
   border: none;
-  transform: rotate(90deg);
 }
 
 .trigger:focus, .trigger:hover {
-  outline: 2px dotted hsl(0, 0%, 10%);
+  outline: 2px dotted hsl(0, 0%, 90%);
 }
 
 .trigger:focus {
@@ -46,31 +45,39 @@ Navigation:
   border-bottom: solid 4px #B9672D;
 }
 
-/*
-  @media screen and (min-width: 27em) {
-    .reveal {
-      left: 0;
-    }
+@media screen and (min-width: 40em) and (max-width: 50em) {
+  .main-nav {
+    padding: 0;
+    font-size: .9em;
+  }
+}
 
-    .main-nav {
-      grid-area: nav;
-    }
-
-    .main-nav ul {
-      display: none;
-      flex-direction: column;
-    }
-    .open ul {
-      display: flex;
-    }
-    .trigger {
-      position: fixed;
-      display: block;
-      top: 1.5em;
-      left: .2em;
-      transition: left .6s;
-    }
-    .reveal .trigger {
-      left: 14em;
-    }
-*/
+@media screen and (max-width: 40em) {
+  .titleBar {
+    display: none;
+  }
+  .reveal {
+    left: 0;
+  }
+  .main-nav {
+    grid-area: nav;
+    display: block;
+  }
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  .open ul {
+    display: flex;
+  }
+  .trigger {
+    position: fixed;
+    display: block;
+    top: 1.5em;
+    left: .2em;
+    transition: left .6s;
+  }
+  .reveal .trigger {
+    left: 14em;
+  }
+}

@@ -13,6 +13,9 @@
   fill: #222;
 }
 
-.titleBarSLQmark {
-  height: 0;
+.titleBarHeading {
+  display: none;
+  width: auto;
+  height: 50px;
+  padding: 8px;
 }

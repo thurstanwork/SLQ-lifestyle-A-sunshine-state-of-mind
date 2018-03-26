@@ -1,5 +1,9 @@
 .titleBar {
-  display: inline-flex;
+  display: flex;
+}
+
+.SLQmarkContainer {
+  display: flex;
 }
 
 .main-nav {
