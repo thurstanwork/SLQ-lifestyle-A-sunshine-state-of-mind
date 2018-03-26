@@ -5,20 +5,28 @@ Basic responsive layout for all browsers:
 --------------------------------------------------------------*/
 
 .site {
-  max-width: 50em;
   margin: 0 auto;
+}
+
+.sectionContent {
+  max-width: 900px;
+}
+
+.communityFooterMotif2 {
+  display: none;
+}
+
+.hopeFooterMotif2 {
+  display: none;
 }
 
 /*** MOBILE ***/
 
 @media screen and (max-width: 40em);
   {
-  .hopeFooterMotif2 {
-    display: none;
-  }
-  .photo {}
-  .communityFooterMotif2 {
-    display: none;
+  .photo {
+    border-width: 10px;
+    padding: 10px;
   }
   .ambassador {
     flex-wrap: wrap;

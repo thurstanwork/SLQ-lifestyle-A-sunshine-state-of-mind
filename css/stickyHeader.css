@@ -1,8 +1,7 @@
 .titleBar {
-  display: block;
   position: fixed;
-  top: 0px;
   width: 100%;
+  top: 0px;
   z-index: 100;
   background: hsla(0, 0%, 100%, .8);
 }
@@ -12,4 +11,8 @@
   width: 40px;
   margin: 10px;
   fill: #222;
+}
+
+.titleBarSLQmark {
+  height: 0;
 }

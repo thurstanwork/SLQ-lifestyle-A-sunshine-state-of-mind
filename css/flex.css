@@ -1,0 +1,7 @@
+.titleBar {
+  display: inline-flex;
+}
+
+.main-nav {
+  flex-grow: 1;
+}
