@@ -70,8 +70,9 @@ figcaption {
 
 .SLQmark {
     fill: #FFF;
-    width: 5rem;
-    height: 5rem;
+    height: 5%;
+    min-width: 2rem;
+    max-width: 5rem;
     margin: .5rem;
 }
 
@@ -105,16 +106,16 @@ figcaption {
 
 /***************************/
 
-#ambassadors {
+#Ambassadors {
     background: #eee;
     color: #333;
 }
 
-#ambassadors h2 {
+#Ambassadors h2 {
     font-size: 2.1rem;
 }
 
-#ambassadors a {
+#Ambassadors a {
     color: #333;
 }
 

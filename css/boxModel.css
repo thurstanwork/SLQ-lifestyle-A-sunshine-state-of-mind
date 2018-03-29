@@ -1,5 +1,42 @@
-.headerMotif {
-    width: 40%;
+#wellbeing .headings {
+    width: auto;
+    height: 200px;
+}
+
+#wellbeing .headerMotif {
+    width: auto;
+    height: 200px;
+}
+
+#home .headings {
+    width: auto;
+    height: 100px;
+}
+
+#home .headerMotif {
+    width: auto;
+    height: 200px;
+}
+
+
+
+.lifestyleTitle {
+    max-width: 900px;
+}
+
+
+h2 {
+    float: left;
+    margin-right: 3rem;
+}
+
+#Ambassadors h2 {
+    float: none;
+
+}
+
+#hope h2 {
+    float: none;
 }
 
 .footerMotif,
@@ -7,4 +44,5 @@
 .footerMotif2 {
     margin: 0 auto;
     width: 80%;
+    margin-top: 3rem;
 }
