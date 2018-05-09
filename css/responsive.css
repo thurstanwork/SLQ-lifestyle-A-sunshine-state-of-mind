@@ -5,37 +5,40 @@ Basic responsive layout for all browsers:
 --------------------------------------------------------------*/
 
 .site {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .sectionContent {
-  max-width: 900px;
+    max-width: 900px;
 }
 
 .communityFooterMotif2 {
-  display: none;
+    display: none;
 }
 
 .hopeFooterMotif2 {
-  display: none;
+    display: none;
 }
 
 /*** MOBILE ***/
 
 @media screen and (max-width: 40em) {
-  .photo {
-    border-width: 10px;
-    padding: 10px;
-  }
-  .ambassador {
-    flex-wrap: wrap;
-  }
+    .photo {
+        border-width: 10px;
+        padding: 10px;
+    }
+    .ambassador {
+        flex-wrap: wrap;
+    }
+    .titleBar {
+        display: none;
+    }
 }
 
 /*** TABLET ***/
 
 @media screen and (min-width: 600px) {
-  .ambassador {
-    flex-wrap: nowrap;
-  }
+    .ambassador {
+        flex-wrap: nowrap;
+    }
 }

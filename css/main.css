@@ -8,8 +8,7 @@
 @import url("accessibility.css");
 @import url("typography.css");
 @import url("sections.css");
-@import url("responsive.css");
 @import url("boxModel.css");
 @import url("flex.css");
-
+@import url("responsive.css");
 /*@import url("grid.css");*/
